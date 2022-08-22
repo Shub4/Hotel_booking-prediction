@@ -1,0 +1,23 @@
+body {
+    background-color: #e1f4f3;
+    text-align: center;
+}
+
+a{
+position:absolute;
+top:0;
+right:0;
+font-family: Cursive;
+}
+
+button{
+padding: 8px 25px;
+background: transparent;
+outline: none;
+border: 2px solid #000;
+border-radius: 20px;
+color: #000;
+font-size: 12px;
+font-weight: bold;
+cursor: pointer;
+}

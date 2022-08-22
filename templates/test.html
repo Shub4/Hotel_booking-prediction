@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename="style.css")}}">
+
+<style>
+
+h1{
+  font-family: Georgia, serif;
+}
+
+h2{
+font-family: "Goudy Bookletter 1911", sans-serif;
+}
+</style>
+
+</head>
+
+
+<body>
+
+   <center><header>
+     <br><h1> Customer Hotel Check In Prediction </h1><br><br>
+
+   </header></center>  
+   
+   
+   
+   
+
+
+
+        <form method='POST'>
+
+
+          
+                <h5 class="card-title">Age</h5>
+                            
+                <input type='text' name='age' id='age' required="required">
+                       
+
+                <br>
+                <br>
+
+                
+                            <h5 class="card-title">Days Since Creation</h5>
+                            
+                            <input type='text' name='creation' id='creation' required="required">
+                        
+
+            <br>
+            <br>
+
+            
+                            <h5 class="card-title">Average Lead Time</h5>
+                            
+                            <input type='text' name='lead' id='lead' required="required">
+                        
+
+               <br>
+               <br>
+
+                
+                            <h5 class="card-title">Customer Night Stays</h5>
+                            
+                            <input type='text' name='stay' id='stay' required="required">
+                      
+
+            <br>
+            <br>
+             
+            
+                            <h5 class="card-title">Lodging Revenue</h5>
+                            
+                            <input type='text' name='revenue' id='revenue' required="required">
+                       
+
+             <br>
+            <br>
+
+               
+                            <h5 class="card-title">Nationality</h5>
+                            
+                            <select name="nation" id="nation" required="required">
+                                <option value="DEU">DEU</option>
+                                <option value="ESP">ESP</option>
+                                <option value="FRA">FRA</option>
+                                <option value="USA">USA</option>
+                                <option value="PRT">PRT</option>
+                                <option value="OTHER">OTHER</option>
+                            </select>
+                        
+
+            <br>
+            <br>
+
+                 
+                            <h5 class="card-title">Distribution Channel</h5>
+                            
+                            <select name="distribution" id="distribution" required="required">
+                                <option value="Electronic">Electronic</option>
+                                <option value="Travel Agent/Operator">Travel Agent/Operator</option>
+                            </select>
+                       
+
+             <br>
+            <br>
+
+                  
+                            <h5 class="card-title">Market Segment</h5>
+                            
+                            <select name="segment" id="segment" required="required">
+                                <option value="Corporate">Corporate</option>
+                                <option value="Direct">Direct</option>
+                                <option value="Groups">Groups</option>
+                                <option value="Travel Agent/Operator">Travel Agent/Operator</option>
+                            </select>
+                        
+
+             <br>
+            <br>
+
+            
+            <button type='submit', value='submit'>Submit</button>
+        </form>  
+
+   <center><br><br><p>
+     {% if prediction==1 %}
+     <h2 style="color:blue;"> Customer going to be Checked In </h2>
+     {% elif prediction==0 %}
+     <h2 style="color:red;"> Customer not going to be Checked In </h2>
+     {% endif %}
+   </p><br><br><br></center>  
+
+   
+
+
+ <a href="https://www.linkedin.com/in/shubham-bachchan-187283146/" target="_blank" style="margin-right:90px">Linkedin</a>
+<a href="https://github.com/Shub4" target="_blank" style="margin-right:20px">GitHUb</a>
+</body>
+
+</html>
