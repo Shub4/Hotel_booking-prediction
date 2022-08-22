@@ -7,10 +7,10 @@ from keras.models import load_model
 
 
 
-app_new = Flask(__name__)
+app = Flask(__name__)
 
 
-@app_new.route('/', methods=('GET' , 'POST'))
+@app.route('/', methods=('GET' , 'POST'))
 
 def predict():
     
@@ -161,7 +161,7 @@ def predict():
 
 
 if __name__ == "__main__":
-    app_new.run(debug=True)
+    app.run(debug=True)
     
     
     
