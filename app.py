@@ -7,18 +7,11 @@ from keras.models import load_model
 
 
 
-app = Flask(__name__)
+app_new = Flask(__name__)
 
 
+@app_new.route('/', methods=('GET' , 'POST'))
 
-
-#@app.route("/")
-#@cross_origin()
-#def home():
-    #return render_template("hotel.html")
-
-@app.route('/', methods=('GET' , 'POST'))
-#@cross_origin()
 def predict():
     
     
@@ -168,7 +161,7 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app_new.run(debug=True)
     
     
     
