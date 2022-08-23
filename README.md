@@ -5,6 +5,8 @@ Q. Write a regex to extract all the numbers with orange color background from th
 A. Using regular exp pattern and findall
    * pattern=r":(\d*)(}|,)"
    * result=re.findall(pattern, text)
+   
+   code in regex.ipynb file
 
 
 ## Part 2
@@ -14,7 +16,7 @@ predicts the customer who is going to be checked in. Once done, please test
 the prediction. Host/Deploy the results using any hosting service you want (streamlit/flask) 
 
 
-A. Steps followed:
+A. Steps followed: (code in hotel_bookings.ipynb file)
    1. Data Preprocessing
       * Null Value Check and handling.
       * Data Balance Check.
