@@ -2,8 +2,8 @@
 
 Q. Write a regex to extract all the numbers with orange color background from the below text in italics.
 
-A. pattern=r":(\d*)(}|,)"
-   result=re.findall(pattern, text)
+A. * pattern=r":(\d*)(}|,)"
+   * result=re.findall(pattern, text)
 
 
 ## Part 2
