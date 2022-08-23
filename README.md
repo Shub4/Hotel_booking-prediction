@@ -2,7 +2,8 @@
 
 Q. Write a regex to extract all the numbers with orange color background from the below text in italics.
 
-A. * pattern=r":(\d*)(}|,)"
+A. Using regular exp pattern and findall
+   * pattern=r":(\d*)(}|,)"
    * result=re.findall(pattern, text)
 
 
@@ -54,7 +55,8 @@ A. I have changed my tech to Data Science and has no relevant industry exposure 
 
 Q. Explain back propagation and tell us how you handle a dataset if 4 out of 30 parameters have null values more than 40 percentage.
 
-A. 1. * BackProp is one of the several ways in which ANN can be trained. It is a supervised training scheme, which means, it learns form labeled training data (there is a supervisor to guide its learning).
+A. 
+   1. * BackProp is one of the several ways in which ANN can be trained. It is a supervised training scheme, which means, it learns form labeled training data (there is a supervisor to guide its learning).
       * In simple terms, BackProp is like "Learning from mistakes". The supervisor corrects ANN whenevr it makes mistakes.
       * Initially all the weights are randomly assigned. For every input in the training dataset, the ANN is activated and its output is observed. This output is compared with the desired output that we already know, and the error is propogated back to the previous layer. This error is noted and the weights are adjusted accordingly. This process is repeated untill the error is below predetermined threshold.
 
